@@ -6,11 +6,138 @@
 -->
 <html>
 	<head>
-		<title>About Me</title>
+		<title>About Me | Ridma Hoq</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Resume-style About page additions */
+			.about-resume {
+				display: grid;
+				grid-template-columns: 18rem 1fr;
+				gap: 3rem;
+				align-items: start;
+			}
+
+			.about-sidebar {
+				border-right: solid 1px #eeeeee;
+				padding-right: 2rem;
+			}
+
+			.profile-photo {
+				width: 11rem;
+				height: 11rem;
+				object-fit: cover;
+				border-radius: 50%;
+				display: block;
+				margin: 0 0 1.5rem 0;
+				border: solid 1px #eeeeee;
+			}
+
+			.about-sidebar h2 {
+				margin-bottom: 0.25rem;
+				font-size: 1.6rem;
+			}
+
+			.about-sidebar .role {
+				font-weight: 600;
+				margin-bottom: 1.25rem;
+				color: #555555;
+			}
+
+			.about-sidebar h3 {
+				font-size: 0.9rem;
+				margin: 2rem 0 0.6rem 0;
+				letter-spacing: 0.075em;
+				text-transform: uppercase;
+			}
+
+			.sidebar-list,
+			.timeline-list {
+				list-style: none;
+				padding-left: 0;
+				margin-left: 0;
+			}
+
+			.sidebar-list li {
+				margin-bottom: 0.45rem;
+			}
+
+			.skill-group {
+				margin-bottom: 1rem;
+			}
+
+			.skill-group strong {
+				display: block;
+				margin-bottom: 0.25rem;
+			}
+
+			.about-content header.major {
+				text-align: left;
+				margin-bottom: 2rem;
+			}
+
+			.about-content header.major h1 {
+				margin-bottom: 0.35rem;
+			}
+
+			.about-content section {
+				margin-bottom: 2.25rem;
+			}
+
+			.resume-item {
+				margin-bottom: 1.5rem;
+				padding-bottom: 1.25rem;
+				border-bottom: solid 1px #eeeeee;
+			}
+
+			.resume-item:last-child {
+				border-bottom: 0;
+				padding-bottom: 0;
+			}
+
+			.resume-item h3 {
+				margin-bottom: 0.25rem;
+			}
+
+			.resume-meta {
+				font-style: italic;
+				color: #666666;
+				margin-bottom: 0.6rem;
+			}
+
+			.tag-list {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+				padding-left: 0;
+				margin-left: 0;
+				list-style: none;
+			}
+
+			.tag-list li {
+				border: solid 1px #dddddd;
+				border-radius: 999px;
+				padding: 0.2rem 0.65rem;
+				font-size: 0.85rem;
+				margin: 0;
+			}
+
+			@media screen and (max-width: 980px) {
+				.about-resume {
+					grid-template-columns: 1fr;
+					gap: 2rem;
+				}
+
+				.about-sidebar {
+					border-right: 0;
+					border-bottom: solid 1px #eeeeee;
+					padding-right: 0;
+					padding-bottom: 2rem;
+				}
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -37,17 +164,163 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Post -->
+						<!-- Resume-style About page -->
 							<section class="post">
-								<header class="major">
-									<h1>About Me</h1>
-									<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									amet nullam sed etiam veroeros.</p>
-								</header>
-								<div class="image main"><img src="images/pic05.jpg" alt="" /></div>
-								<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar mauris. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur sapien risus, commodo eget turpis at, elementum convallis enim turpis, lorem ipsum dolor sit amet nullam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus. Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet. Pellentesque leo mauris, consectetur id ipsum.</p>
+								<div class="about-resume">
+
+									<!-- Left Sidebar -->
+									<aside class="about-sidebar">
+										<img src="images/me.jpg" alt="Ridma Hoq" class="profile-photo" />
+
+										<h2>Ridma Hoq</h2>
+										<p class="role">Data Science MS Graduate</p>
+										<p class="role">Junior Data Scientist | Data Analyst | Reporting Analyst</p>
+
+										<p>
+											I work with data cleaning, analysis, visualization, reporting, and database-centered projects using Python, SQL, Excel, Tableau, and related tools.
+										</p>
+
+										<ul class="actions stacked">
+											<li><a href="index.html" class="button primary fit">View Projects</a></li>
+											<li><a href="https://github.com/ridmahoq" class="button fit">GitHub</a></li>
+											<li><a href="https://www.linkedin.com/in/ridma-hoq/" class="button fit">LinkedIn</a></li>
+										</ul>
+
+										<h3>Contact</h3>
+										<ul class="sidebar-list">
+											<li>New Jersey, USA</li>
+											<li><a href="mailto:ridmahoqwe@gmail.com">ridmahoqwe@gmail.com</a></li>
+											<li><a href="https://github.com/ridmahoq">github.com/ridmahoq</a></li>
+											<li><a href="https://www.linkedin.com/in/ridma-hoq/">linkedin.com/in/ridma-hoq</a></li>
+										</ul>
+
+										<h3>Core Skills</h3>
+										<div class="skill-group">
+											<strong>Analysis & Reporting</strong>
+											Data cleaning, validation, exploratory analysis, KPI/trend reporting, documentation
+										</div>
+										<div class="skill-group">
+											<strong>Programming</strong>
+											Python, SQL, CQL, R, HTML/CSS
+										</div>
+										<div class="skill-group">
+											<strong>Visualization</strong>
+											Tableau, Excel, Matplotlib, D3.js
+										</div>
+										<div class="skill-group">
+											<strong>Data Systems</strong>
+											Cassandra/Astra DB, MySQL, Pandas, scikit-learn, OpenRefine, Git/GitHub
+										</div>
+									</aside>
+
+									<!-- Main Content -->
+									<div class="about-content">
+										<header class="major">
+											<h1>About Me</h1>
+											<p>Data science graduate focused on transforming raw data into structured datasets, visual reports, and clear insights.</p>
+										</header>
+
+										<section>
+											<h2>Profile</h2>
+											<p>
+												I am a Data Science MS graduate with a Computer Science and Engineering background. My work is centered on data analysis, reporting, visualization, and data systems, with projects involving transportation records, environmental and audio datasets, genomic data, media-consumption trends, and geospatial imagery.
+											</p>
+											<p>
+												I enjoy organizing messy data, building useful summaries, and presenting findings in a way that is easy to understand. I am especially interested in entry-level roles across data analysis, reporting, data coordination, database work, and applied machine learning.
+											</p>
+										</section>
+
+										<section>
+											<h2>Education</h2>
+											<div class="resume-item">
+												<h3>Master of Science in Data Science</h3>
+												<p class="resume-meta">Rowan University · New Jersey, USA · 2024–2026</p>
+												<p>Relevant coursework includes Probability and Statistics, Visual Analytics, Advanced Database Systems, Data Mining, Multivariate Data Analysis, and Big Data.</p>
+											</div>
+											<div class="resume-item">
+												<h3>Bachelor of Science in Computer Science and Engineering</h3>
+												<p class="resume-meta">East Delta University · Chittagong, Bangladesh · 2019–2023</p>
+												<p> Relevant Coursework includes Programming, Databases, Algorithms, Software Engineering, and Data Structures.</p>
+											</div>
+										</section>
+
+										<section>
+											<h2>Selected Projects</h2>
+											<div class="resume-item">
+												<h3><a href="https://github.com/ridmahoq/big-data-project">Big Data Pipeline &amp; Analytics System</a></h3>
+												<p class="resume-meta">Python · Cassandra/Astra DB · CQL · Matplotlib · Medallion Architecture</p>
+												<p>Built an ELT workflow for 150K+ Chicago taxi trip records, organized raw and cleaned datasets, designed Cassandra analytics tables, and created visual summaries of trip volume, fare patterns, payment type, and time-of-day trends.</p>
+											</div>
+
+											<div class="resume-item">
+												<h3>VAST Challenge MC-1: Environmental &amp; Wildlife Claims Analysis</h3>
+												<p class="resume-meta">Tableau · D3.js · Python</p>
+												<p>Analyzed verified and disputed bird-call records, built geospatial visualizations to compare claim locations, and used feature extraction and statistical comparison to summarize acoustic differences across claim categories.</p>
+											</div>
+
+											<div class="resume-item">
+												<h3><a href="https://github.com/ridmahoq/sars-cov2_genomic-analysis">SARS-CoV-2 Genome Analytics &amp; Network Modeling</a></h3>
+												<p class="resume-meta">Python · Pandas · SciPy · Cytoscape · MEGA</p>
+												<p>Analyzed 1,000+ genomic sequences, created mutation frequency summaries and Manhattan plots, and built distance matrices and network visualizations to examine relationships among genome samples.</p>
+											</div>
+
+											<div class="resume-item">
+												<h3>Satellite Image Processing &amp; Geospatial Analysis</h3>
+												<p class="resume-meta">PyTorch · Rasterio · Geospatial Data</p>
+												<p>Processed satellite and geospatial imagery datasets for environmental analysis tasks and executed deep learning inference and image-processing steps using Python-based tools.</p>
+											</div>
+										</section>
+
+										<section>
+											<h2>Experience</h2>
+											<div class="resume-item">
+												<h3>Content Writer</h3>
+												<p class="resume-meta">The WordWorkers · 2019–2021</p>
+												<p>Authored structured informational content, buying guides, and articles while adapting tone, organization, and level of detail to the target audience.</p>
+											</div>
+											<div class="resume-item">
+												<h3>Tutor</h3>
+												<p class="resume-meta">Independent · 2019–2023</p>
+												<p>Delivered individualized instruction in English, Science, and Information Technology, explaining technical and academic concepts in a clear and approachable way.</p>
+											</div>
+										</section>
+
+										<section>
+											<h2>Tools I Use</h2>
+											<ul class="tag-list">
+												<li>Python</li>
+												<li>SQL</li>
+												<li>CQL</li>
+												<li>Excel</li>
+												<li>Tableau</li>
+												<li>Pandas</li>
+												<li>scikit-learn</li>
+												<li>Matplotlib</li>
+												<li>D3.js</li>
+												<li>Cassandra</li>
+												<li>MySQL</li>
+												<li>OpenRefine</li>
+												<li>Git/GitHub</li>
+											</ul>
+										</section>
+
+										<section>
+											<h2>Publication</h2>
+											<div class="resume-item">
+												<h3>Exploring the Integration of Edge AI into 6G Networks</h3>
+												<p>
+													Rukon, M. R., <strong>Hoq, R.</strong>, &amp; Hasnat, M. (2025).
+													<em>IEEE International Carnahan Conference on Security Technology (ICCST)</em>.
+												</p>
+												<p>
+													<a href="https://doi.org/10.1109/ICCST63435.2025.11293879" target="_blank" rel="noopener noreferrer">
+														View Publication / DOI
+													</a>
+												</p>
+											</div>
+										</section>
+									</div>
+								</div>
 							</section>
 
 					</div>
@@ -58,10 +331,6 @@
 							<section class="alt">
 								<h3>Location</h3>
 								<p>NJ, USA</p>
-							</section>
-							<section>
-								<h3>Phone</h3>
-								<p><a href="tel:+1234567890">(123) 456-7890</a></p>
 							</section>
 							<section>
 								<h3>Email</h3>
@@ -79,7 +348,7 @@
 
 				<!-- Copyright -->
 					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+						<ul><li>&copy; Ridma Hoq</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
 					</div>
 
 			</div>
